@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card</title>
+    <script src="game.js"></script>
+    <style>
+        body {
+            background-image: url("https://wallpaperaccess.com/full/5053507.jpg");
+
+        }
+
+        h1 {
+            font-family: monospace;
+        }
+
+        #hidden {
+            display: flex;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            width: 1200px;
+            margin: auto auto;
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        .in {
+            border-top: 20px;
+            
+        }
+
+        .containerOut {
+
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+            justify-content: center;
+            font-size: 5px;
+            background-position: center;
+            background-repeat: no-repeat;
+        
+        }
+
+        .flexy {
+            display: flex;
+            flex-direction: row;
+            background-image: url("");
+            height: 10px;
+            justify-content: center;
+            font-size: 5px;
+            
+            
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+        }
+
+        h4 {
+            font-size: 30px;
+            text-align: center;
+            
+        }
+    </style>
+
+    <div class="containerOut">
+        <br>
+        <h1>Memory Game</h1>
+    </div>
+    <div class="in"> <br>
+        <h4>Score: <span id="gameScore">0</span></h4>
+        <h4>Message:<span id="gameConsole">Game start!</span></h4>
+
+
+    </div>
+    <div class="flexy">
+        <div id="GameBoard"></div>
+
+
+
+</body>
+
+</html>
